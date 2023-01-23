@@ -26,8 +26,9 @@
 }
 
 .logo {
-    margin-left: 5rem;
+    margin-left: 3rem;
     height: 5rem;
+    z-index: 999;
 }
 
 .logo:hover {
@@ -66,34 +67,62 @@
     margin-left: 3rem;
 }
 
-.hero__desc h1 {
+.hero__desc__head {
     font-size: 7rem;
     margin-top: 7rem;
     color: #104896;
     animation: fadeIn 1s;
 }
 
-.hero__desc p {
+.hero__desc__para {
     font-size: 2rem;
     font-weight: 600;
     animation: fadeIn 1.5s;
 }
 
+.visit__btn {
+    background: #104896;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    animation: fadeIn 2s;
+    padding-top: .5rem;
+    margin-top: 1rem;
+}
 
-.hero__container img {
+.visit__btn a {
+    text-decoration: none;
+    color: #DBC148;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.visit__btn:hover {
+    background: #fff;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.visit__btn:hover a {
+    color: #104896;
+    font-weight: 600;
+}
+
+.hero__container__img {
     width: 40rem;
     height: 30rem;
-    animation: fadeIn 2s;
+    animation: fadeIn 2.5s;
 }
 
 /* Brand */
 .brand__container {
     display: flex;
     flex-direction: column;
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
+    bottom: 0;
 }
 
-.brand__container h1 {
+.brand__container__head {
     text-align: center;
     font-size: 3rem;
     color: #104896;
@@ -102,12 +131,13 @@
 
 .brand__card__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 3rem;
     margin-top: 2rem;
 }
 
 .brand__card {
+    width: 90%;
     margin-top: 1rem;
     overflow: hidden;
     position: relative;
@@ -116,8 +146,8 @@
 }
 
 .brand__card img {
-    width: 90%;
-    height: 20rem;
+    width: 100%;
+    height: 15rem;
 }
 
 .brand__card img{
@@ -144,4 +174,35 @@
     cursor: pointer;
 }
 
+/* Delivery */
+.delivery__container {
+    display: flex;
+    background: #104896;
+    top: 0;
+}
+
+.delivery__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 50%;
+}
+
+.delivery__info__head {
+    font-size: 7rem;
+    margin-top: 7rem;
+    color: #fff;
+}
+
+.delivery__info__para {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #DBC148;
+}
+
+.delivery__container__img {
+    margin: 3rem 0;
+    width: 50%;
+}
 

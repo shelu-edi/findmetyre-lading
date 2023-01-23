@@ -8,10 +8,13 @@
 
     <link rel="stylesheet" href="../css/index.css">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+
 </head>
 <body>
-
-</body>
 
     <!-- NavBar -->
     <div class="nav__container">
@@ -24,15 +27,18 @@
     <!-- Hero -->
     <div class="hero__container" id="hero">
         <div class="hero__desc">
-            <h1> Some Thing </h1>
-            <p> Some Stuff </p>
+            <h1 class="hero__desc__head"> Some Thing </h1>
+            <p class="hero__desc__para"> Some Stuff </p>
+            <div class="visit__btn">
+                <a href="#"> Visit Now </a>
+            </div>
         </div>
-        <img src="../img/mechanic.svg" alt="hero-img">
+        <img class="hero__container__img" src="../img/mechanic.svg" alt="hero-img">
     </div>
 
     <!-- Brand-->
     <div class="brand__container">
-        <h1> Some Thing</h1>
+        <h1 class="brand__container__head"> Some Thing</h1>
         <div class="brand__card__wrapper">
             <div class="brand__card">
                 <img src="../img/mechanic-1.png" alt="brand-img">
@@ -55,12 +61,17 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Delivery -->
+    <div class="delivery__container">
+        <div class="delivery__info">
+            <h1 class="delivery__info__head"> Some Thing </h1>
+            <p class="delivery__info__para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, obcaecati? </p>
+        </div>
+        <img class="delivery__container__img" src="../img/delivery.svg" alt="delivery-img">
+    </div>
 
-    <script>
-        AOS.init({
-            duration: 2000,
-        });
-    </script>
+    <script src="../js/index.js"></script>
 
+
+</body>
 </html>
