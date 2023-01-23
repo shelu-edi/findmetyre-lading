@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav__container {
+    height: 4rem;
+    /*background: #104896;*/
+    top: 0;
+    display: flex;
+    position: fixed;
+    /*box-shadow: rgba(0, 0, 0, .1) 0 1px 1px 0;*/
+}
+
+.logo {
+    margin-left: 5rem;
+    height: 5rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav__link {
+    color: #fff;
+    margin-top: 1.4rem;
+}
+
+.nav__btn {
+    text-decoration: none;
+    color: #104896;
+    background: #DBC148;
+    height: 1.5rem;
+    width: 4rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    padding-top: .3rem;
+    border-radius: .3rem;
+}
+
+.nav__btn:hover {
+    box-shadow: rgba(255, 255, 255, .4) 0 5px 5px 0;
+}
+
+/* Hero */
+.hero__container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.hero__desc {
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.hero__desc h1 {
+    font-size: 7rem;
+    margin-top: 7rem;
+    color: #104896;
+    animation: fadeIn 1s;
+}
+
+.hero__desc p {
+    font-size: 2rem;
+    font-weight: 600;
+    animation: fadeIn 1.5s;
+}
+
+
+.hero__container img {
+    width: 40rem;
+    height: 30rem;
+    animation: fadeIn 2s;
+}
+
+/* Brand */
+.brand__container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.brand__container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #104896;
+    animation: fadeIn 2.5s;
+}
+
+.brand__card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.brand__card {
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 3s;
+}
+
+.brand__card img {
+    width: 90%;
+    height: 20rem;
+}
+
+.brand__card img{
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.brand__card img{
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.brand__card:hover .brand__card{
+    background: rgba(255,255,255,0.3);
+}
+
+.brand__card:hover img{
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    cursor: pointer;
+}
+
+
