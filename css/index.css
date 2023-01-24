@@ -1,237 +1,355 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 * {
-    margin: 0;
-    font-family: 'Work Sans', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav__container {
-    height: 4rem;
-    /*background: #104896;*/
-    top: 0;
-    display: flex;
-    position: fixed;
-    /*box-shadow: rgba(0, 0, 0, .1) 0 1px 1px 0;*/
+  height: 4rem;
+  /*background: #104896;*/
+  top: 0;
+  display: flex;
+  position: fixed;
+  /*box-shadow: rgba(0, 0, 0, .1) 0 1px 1px 0;*/
 }
 
 .logo {
-    margin-left: 3rem;
-    height: 5rem;
-    z-index: 999;
+  margin-left: 3rem;
+  height: 5rem;
+  z-index: 999;
 }
 
 .logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav__link {
-    color: #fff;
-    margin-top: 1.4rem;
+  color: #fff;
+  margin-top: 1.4rem;
 }
 
 .nav__btn {
-    text-decoration: none;
-    color: #104896;
-    background: #DBC148;
-    height: 1.5rem;
-    width: 4rem;
-    margin-top: 1.2rem;
-    text-align: center;
-    padding-top: .3rem;
-    border-radius: .3rem;
+  text-decoration: none;
+  color: #104896;
+  background: #dbc148;
+  height: 1.5rem;
+  width: 4rem;
+  margin-top: 1.2rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  border-radius: 0.3rem;
 }
 
 .nav__btn:hover {
-    box-shadow: rgba(255, 255, 255, .4) 0 5px 5px 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 5px 5px 0;
 }
 
 /* Hero */
 .hero__container {
-    display: flex;
-    margin-top: 2rem;
+  display: flex;
+  margin-top: 2rem;
 }
 
 .hero__desc {
-    width: 50%;
-    margin-left: 3rem;
+  width: 50%;
+  margin-left: 3rem;
 }
 
 .hero__desc__head {
-    font-size: 7rem;
-    margin-top: 7rem;
-    color: #104896;
-    animation: fadeIn 1s;
+  font-size: 7rem;
+  margin-top: 7rem;
+  color: #104896;
+  animation: fadeIn 1s;
 }
 
 .hero__desc__para {
-    font-size: 2rem;
-    font-weight: 600;
-    animation: fadeIn 1.5s;
+  font-size: 2rem;
+  font-weight: 600;
+  animation: fadeIn 1.5s;
 }
 
 .visit__btn {
-    background: #104896;
-    width: 8rem;
-    height: 2rem;
-    text-align: center;
-    animation: fadeIn 2s;
-    padding-top: .5rem;
-    margin-top: 1rem;
+  background: #104896;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
+  animation: fadeIn 2s;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .visit__btn a {
-    text-decoration: none;
-    color: #DBC148;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: #dbc148;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .visit__btn:hover {
-    background: #fff;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .visit__btn:hover a {
-    color: #104896;
-    font-weight: 600;
+  color: #104896;
+  font-weight: 600;
 }
 
 .hero__container__img {
-    width: 40rem;
-    height: 30rem;
-    animation: fadeIn 2.5s;
+  width: 40rem;
+  height: 30rem;
+  animation: fadeIn 2.5s;
 }
 
 /* Brand */
 .brand__container {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 0 0 0;
-    bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 0;
+  bottom: 0;
 }
 
 .brand__container__head {
-    text-align: center;
-    font-size: 3rem;
-    color: #104896;
-    animation: fadeIn 2.5s;
+  text-align: center;
+  font-size: 3rem;
+  color: #104896;
+  animation: fadeIn 2.5s;
 }
 
 .brand__card__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 3rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 .brand__card {
-    width: 90%;
-    margin-top: 1rem;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    animation: fadeIn 3s;
-    z-index: 0;
+  width: 90%;
+  margin-top: 1rem;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  animation: fadeIn 3s;
+  z-index: 0;
 }
 
 .brand__card img {
-    width: 100%;
-    height: 15rem;
+  width: 100%;
+  height: 15rem;
 }
 
-.brand__card img{
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+.brand__card img {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
-.brand__card img{
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+.brand__card img {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
-.brand__card:hover .brand__card{
-    background: rgba(255,255,255,0.3);
+.brand__card:hover .brand__card {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.brand__card:hover img{
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.2);
-    cursor: pointer;
+.brand__card:hover img {
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  transform: scale3d(1.2, 1.2, 1.2);
+  cursor: pointer;
 }
 
 /* Delivery */
 .delivery__container {
-    display: flex;
-    background: #104896;
-    top: 0;
+  display: flex;
+  background: #104896;
+  top: 0;
 }
 
 .delivery__info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  width: 50%;
 }
 
 .delivery__info__head {
-    font-size: 7rem;
-    margin-top: 7rem;
-    color: #fff;
+  font-size: 7rem;
+  margin-top: 7rem;
+  color: #fff;
 }
 
 .delivery__info__para {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    font-weight: 600;
-    color: #DBC148;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #dbc148;
 }
 
 .delivery__container__img {
-    margin: 3rem 0;
-    width: 50%;
+  margin: 3rem 0;
+  width: 50%;
 }
 
 /* Contact Details */
 .contact__details__container {
-    display: flex;
-    flex-direction: column;
-    background: url("../img/contact-background.jpg") no-repeat fixed;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/contact-background.jpg") no-repeat fixed;
+  padding-bottom: 3rem;
 }
 
 .contact__details__container__Info {
-    font-size: 6rem;
-    color: #fff;
-    text-align: center;
-    margin: 4rem 0 3rem 0;
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  margin: 4rem 0 3rem 0;
 }
 
 .contact__details__container__email {
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
 }
 
 .contact__details__container__phone {
-    font-size: 2.5rem;
-    color: #fff;
-    text-align: center;
-    margin-top: 3rem;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
 }
 
+/* Responsive */
+@media screen and (max-width: 960px) {
+  .hero__desc__head {
+    font-size: 3rem;
+  }
+
+  .hero__container__img {
+    width: 40%;
+  }
+
+  .brand__container__head {
+      font-size: 2rem;
+  }
+
+  .brand__card__wrapper {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .delivery__container__img {
+      width: 40%;
+      margin-right: 2rem;
+  }
+
+  .delivery__info__head {
+      font-size: 3rem;
+  }
+
+  .delivery__info__para {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+  }
+
+  .contact__details__container__Info {
+      font-size: 3rem;
+  }
+
+    .contact__details__container__email {
+        font-size: 2rem;
+    }
+
+    .contact__details__container__phone {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero__container {
+        margin-top: 0;
+    }
+
+    .hero__desc {
+        margin-top: 3rem;
+    }
+
+    .hero__desc__head {
+        font-size: 2rem;
+    }
+
+    .hero__desc__para {
+        font-size: 1.5rem;
+    }
+
+    .visit__btn {
+        width: 4rem;
+        height: 1rem;
+        padding-top: 0;
+        padding-bottom: .3rem;
+    }
+
+    .visit__btn a {
+        font-size: .6rem;
+        margin-top: 0;
+    }
+
+    .hero__container__img {
+        width: 50%;
+        margin-right: 1rem;
+    }
+
+    .brand__container {
+        margin-top: 0;
+    }
+
+    .brand__container__head {
+        font-size: 2rem;
+    }
+
+    .brand__card__wrapper {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: .2rem;
+    }
+
+    .brand__card {
+        height: 10rem;
+    }
+
+    .delivery__info__head {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .delivery__info__para {
+        font-size: .8rem;
+    }
+
+    .contact__details__container__Info {
+        font-size: 1.6rem;
+    }
+
+    .contact__details__container__email {
+        font-size: 1.4rem;
+    }
+
+    .contact__details__container__phone {
+        font-size: 1.2rem;
+    }
+}
