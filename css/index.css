@@ -143,7 +143,7 @@
   position: relative;
   display: inline-block;
   animation: fadeIn 3s;
-  z-index: 0;
+  z-index: -1;
 }
 
 .brand__card img {
@@ -246,110 +246,110 @@
   }
 
   .brand__container__head {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .brand__card__wrapper {
-      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .delivery__container__img {
-      width: 40%;
-      margin-right: 2rem;
+    width: 40%;
+    margin-right: 2rem;
   }
 
   .delivery__info__head {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   .delivery__info__para {
-      font-size: 1rem;
-      margin-bottom: 3rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
 
   .contact__details__container__Info {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
-    .contact__details__container__email {
-        font-size: 2rem;
-    }
+  .contact__details__container__email {
+    font-size: 2rem;
+  }
 
-    .contact__details__container__phone {
-        font-size: 1rem;
-    }
-
+  .contact__details__container__phone {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .hero__container {
-        margin-top: 0;
-    }
+  .hero__container {
+    margin-top: 0;
+  }
 
-    .hero__desc {
-        margin-top: 3rem;
-    }
+  .hero__desc {
+    margin-top: 3rem;
+  }
 
-    .hero__desc__head {
-        font-size: 2rem;
-    }
+  .hero__desc__head {
+    font-size: 2rem;
+  }
 
-    .hero__desc__para {
-        font-size: 1.5rem;
-    }
+  .hero__desc__para {
+    font-size: 1.5rem;
+  }
 
-    .visit__btn {
-        width: 4rem;
-        height: 1rem;
-        padding-top: 0;
-        padding-bottom: .3rem;
-    }
+  .visit__btn {
+    width: 4rem;
+    height: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.3rem;
+  }
 
-    .visit__btn a {
-        font-size: .6rem;
-        margin-top: 0;
-    }
+  .visit__btn a {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
 
-    .hero__container__img {
-        width: 50%;
-        margin-right: 1rem;
-    }
+  .hero__container__img {
+    width: 50%;
+    margin-right: 1rem;
+  }
 
-    .brand__container {
-        margin-top: 0;
-    }
+  .brand__container {
+    margin-top: 0;
+  }
 
-    .brand__container__head {
-        font-size: 2rem;
-    }
+  .brand__container__head {
+    font-size: 2rem;
+  }
 
-    .brand__card__wrapper {
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: .2rem;
-    }
+  .brand__card__wrapper {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.2rem;
+    margin-right: 1rem;
+  }
 
-    .brand__card {
-        height: 10rem;
-    }
+  .brand__card {
+    height: 10rem;
+  }
 
-    .delivery__info__head {
-        margin-top: 1rem;
-        font-size: 2rem;
-    }
+  .delivery__info__head {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
 
-    .delivery__info__para {
-        font-size: .8rem;
-    }
+  .delivery__info__para {
+    font-size: 0.8rem;
+  }
 
-    .contact__details__container__Info {
-        font-size: 1.6rem;
-    }
+  .contact__details__container__Info {
+    font-size: 1.6rem;
+  }
 
-    .contact__details__container__email {
-        font-size: 1.4rem;
-    }
+  .contact__details__container__email {
+    font-size: 1.4rem;
+  }
 
-    .contact__details__container__phone {
-        font-size: 1.2rem;
-    }
+  .contact__details__container__phone {
+    font-size: 1.2rem;
+  }
 }
